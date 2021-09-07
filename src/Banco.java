@@ -4,7 +4,7 @@ public class Banco {
     	gerente1.nome = "Marcão";
     	gerente1.salario = 1000;
     	gerente1.aumentarSalario(50);
-    	System.out.println(gerente1.salario);
+    	//System.out.println(gerente1.salario);
     	
     	
     	Agencia agencia1 = new Agencia(1001);
@@ -17,8 +17,18 @@ public class Banco {
     	
     	origem.transfere(destino, 100);
     
-    	System.out.println("Saldo origem "+ origem.saldo);
-    	System.out.println("Saldo Destino "+ destino.saldo);
+    	//System.out.println("Saldo origem "+ origem.saldo);
+    	//System.out.println("Saldo Destino "+ destino.saldo);
+    	
+    	Funcionario funcio1 = new Funcionario();
+    	
+    	funcio1.nome = "Coala";
+    	funcio1.salario = 1000;
+    	funcio1.valeRefeicao = 200;
+    	
+    	System.out.println(funcio1.nome+"\n"+funcio1.salario+"\n"+funcio1.valeRefeicao);
+    	funcio1.Reajuste(20);
+    	System.out.println(funcio1.valeRefeicao);
     }
 }
 class Gerente{
@@ -96,4 +106,19 @@ class Agencia {
     	this.numero = numeroAgencia;
     }
     
+}
+
+class Funcionario{
+	public String nome;
+	public double salario;
+	public static double valeRefeicao;
+	
+	public void Reajuste(double taxa) {
+		taxa = taxa / 100;
+		this.valeRefeicao =this.valeRefeicao+(this.valeRefeicao*taxa);
+		
+		
+	}
+	
+	
 }
