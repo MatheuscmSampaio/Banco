@@ -1,29 +1,29 @@
 public class Banco {
 	public static void main(String[] args) {
 		Gerente gerente1 = new Gerente();
-		/*
-		 * gerente1.nome = "Marcão"; gerente1.salario = 1000;
-		 * gerente1.aumentarSalario(50); // System.out.println(gerente1.salario);
-		 * 
-		 * Agencia agencia1 = new Agencia(1001);
-		 * 
-		 * Conta origem = new Conta(agencia1); Conta destino = new Conta(agencia1);
-		 * 
-		 * origem.saldo = 1000; destino.saldo = 1000;
-		 * 
-		 * origem.transfere(destino, 100);
-		 * 
-		 * // System.out.println("Saldo origem "+ origem.saldo); //
-		 * System.out.println("Saldo Destino "+ destino.saldo);
-		 * 
-		 * Funcionario funcio1 = new Funcionario();
-		 * 
-		 * funcio1.nome = "Coala"; funcio1.salario = 1000; funcio1.valeRefeicao = 20;
-		 * 
-		 * System.out.println(funcio1.nome + "\n" + funcio1.salario + "\n" +
-		 * funcio1.valeRefeicao); funcio1.reajuste(50);
-		 * System.out.println(funcio1.valeRefeicao);
-		 */
+		
+		gerente1.nome = "Marcï¿½o"; gerente1.salario = 1000;
+		gerente1.aumentarSalario(50); // System.out.println(gerente1.salario);
+		  
+		Agencia agencia1 = new Agencia(1001);
+		  
+		Conta origem = new Conta(agencia1); Conta destino = new Conta(agencia1);
+		 
+		origem.saldo = 1000; destino.saldo = 1000;
+		  
+		origem.transfere(destino, 100);
+		  
+		System.out.println("Saldo origem "+ origem.saldo); //
+		System.out.println("Saldo Destino "+ destino.saldo);
+		  
+		Funcionario funcio1 = new Funcionario();
+		  
+		funcio1.nome = "Coala"; funcio1.salario = 1000; funcio1.valeRefeicao = 20;
+		  
+		System.out.println(funcio1.nome + "\n" + funcio1.salario + "\n" +
+		funcio1.valeRefeicao); funcio1.reajuste(50);
+		System.out.println(funcio1.valeRefeicao);
+		 
 	}
 }
 
@@ -141,7 +141,7 @@ class Conta {
 	}
 
 	private void imprimeExtrato(int dias) {
-		System.out.println("Extrato do últimos " + dias + " dias");
+		System.out.println("Extrato do ï¿½ltimos " + dias + " dias");
 	}
 
 }
